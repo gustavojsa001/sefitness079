@@ -5,7 +5,44 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 
-<style>.produtos {
+<style>
+
+/* 🌐 SITE GERAL */
+body {
+  font-family: Arial;
+  background: #3b0a0a; /* vinho escuro */
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🟡 BANNER */
+.banner {
+  background: linear-gradient(90deg, #c0c0c0, #f2f2f2);
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* ✍️ NOME LOJA */
+.nome-loja {
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  font-weight: 700;
+  color: black;
+}
+
+/* 🖼️ LOGO */
+.logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* 🛍️ PRODUTOS */
+.produtos {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -18,38 +55,14 @@
   padding: 15px;
   border-radius: 10px;
   width: 220px;
+  transition: 0.3s;
 }
 
-body {
-  font-family: Arial;
-  background: #3b0a0a; /* 🍷 vinho escuro */
-  color: white;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+.produto:hover {
+  transform: scale(1.05);
 }
 
-.banner {
-  background: linear-gradient(90deg, #c0c0c0, #f2f2f2);
-  padding: 25px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.nome-loja {
-  font-family: 'Dancing Script', cursive;
-  font-size: 100px;
-  font-weight: 700;
-  color: black;
-}
-
-.logo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
+/* 📱 BOTÃO WHATSAPP */
 .botao {
   display: inline-block;
   background: linear-gradient(45deg, #25D366, #128C7E);
@@ -60,13 +73,14 @@ body {
   font-weight: bold;
   text-decoration: none;
   transition: 0.3s;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .botao:hover {
   transform: scale(1.05);
 }
 
+/* 🖼️ IMAGENS */
 img {
   border-radius: 10px;
   margin-top: 10px;
@@ -78,7 +92,7 @@ img {
 
 <body>
 
-<!-- BANNER -->
+<!-- 🟡 BANNER -->
 <div class="banner">
   <img src="logo.png" class="logo">
   <span class="nome-loja">SEstore079</span>
@@ -86,29 +100,32 @@ img {
 
 <h2>Moda Fitness Feminina em Atacado</h2>
 
-<!-- PRODUTO --><div class="produtos">
+<!-- 🛍️ PRODUTOS -->
 <div class="produtos">
 
   <div class="produto">
     <img src="photo2.jpeg" width="200">
-    <h3>Macaquinho 39,99$ (a partir de 10 peças)</h3>
+    <h3>Macaquinho 39,99$</h3>
+    <p>(a partir de 10 peças)</p>
   </div>
 
   <div class="produto">
     <img src="foto.png" width="200">
-    <h3>Top Fitness R$ 12,99 (a partir de 12 peças)</h3>
+    <h3>Top Fitness R$ 12,99</h3>
+    <p>(a partir de 12 peças)</p>
   </div>
 
   <div class="produto">
     <img src="foto3.jpeg" width="200">
-    <h3>Bomber liso colorido 29,99$ (a partir de 10 peças)</h3>
+    <h3>Bomber liso colorido</h3>
+    <p>R$ 29,99</p>
   </div>
 
 </div>
- 
+
 <p>Novidades toda semana 🛍️</p>
 
-<!-- BOTÃO WHATSAPP -->
+<!-- 📱 BOTÃO WHATSAPP -->
 <a href="https://wa.me/5579981253192" target="_blank" class="botao">
   Comprar no WhatsApp
 </a>
